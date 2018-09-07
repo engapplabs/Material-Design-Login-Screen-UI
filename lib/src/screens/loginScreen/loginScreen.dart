@@ -23,12 +23,6 @@ class _LoginScreenState extends State<LoginScreen> {
               child: new Container(
                 color: Theme.of(context).primaryColor,
                 alignment: FractionalOffset.center,
-                child: new Image.asset(
-                  'images/icon.png',
-                  height: mediaQuery * 90.0,
-                  width: mediaQuery * 90.0,
-                  fit: BoxFit.contain,
-                ),
               ),
             ),
             new Positioned(
@@ -144,7 +138,19 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 }
 
-///Container
-///Stack
-///Center
-///Coluna
+class HomeScreen extends StatefulWidget {
+  @override
+  _HomeScreenState createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  @override
+  Widget build(BuildContext context) {
+    return new Scaffold(
+      body: new Container(
+          child: new Column(
+        children: <Widget>[new Text('data'), new Text('data')],
+      )),
+    );
+  }
+}
